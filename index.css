@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  background-color: #4A4A4A;
+  box-shadow: inset 0 -0.18rem 0 #2E2E2E;
+  z-index: 1;
+}
+.menu ul {
+  list-style: none;
+  font-size: 0;
+  float: right;
+  margin-right: 1.87rem;
+}
+.menu ul li {
+  font-size: 1.56rem;
+  float: left;
+}
+.menu ul li a {
+  display: block;
+  padding: 0.625rem 0.625rem 0.562rem 0.625rem;
+  text-decoration: none;
+  border-bottom: 0.18rem solid transparent;
+  font-family: 'Oswald', sans-serif;
+  color: #D9D9D9;
+  text-transform: uppercase;
+  -webkit-transition: border-bottom 300ms ease;
+  transition: border-bottom 300ms ease;
+  text-shadow: 0 0 0.625rem #000;
+}
+
+.active {
+  border-bottom: 0.18rem solid #D9D9D9 !important;
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  box-shadow: inset 0 0 1.87rem rgba(0, 0, 0, 0.5);
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.parallax article {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.375rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.home-text{
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.info-title{
+  font-size: 4rem;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+#home {
+  background-image: url(./resources/hero-background.png);
+}
+#home h1 {
+  font-size: 3.12rem;
+}
+#home .float {
+  -webkit-animation: float 1s linear infinite alternate;
+          animation: float 1s linear infinite alternate;
+}
+#home i {
+  font-size: 4.37rem;
+  padding: 1rem;
+}
+
+#about {
+  background-image: url(./resources/intro.png);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+#about1{
+  background-image: url(./resources/info1.png);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+#about2{
+  background-image: url(./resources/info2.png);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+#about3{
+  background-image: url(./resources/info3.png);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+#about4{
+  background-image: url(./resources/info4.png);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+
+#about h1 {
+  font-size: 2rem;
+}
+#about h2 {
+  font-size: 1.3rem;
+}
+#about p {
+  margin-top: 2.5rem;
+}
+#about .info {
+  text-align: center;
+}
+
+#rules{
+  background-image: url(./resources/rules.png);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+#rules h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#rules ul {
+  font-size: 1rem;
+  text-align: left;
+}
+#rules1{
+  background-image: url(./resources/rules2.png);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+#rules1 ul {
+  font-size: 1rem;
+  text-align: left;
+}
+#rules1 ul ul {
+  font-size: 1rem;
+  margin-left: 2rem;
+  text-align:left;
+}
+
+#contact {
+  background-image: url(https://unsplash.imgix.net/44/fN6hZMWqRHuFET5YoApH_StBalmainCoffee.jpg?q=75&fm=jpg&s=a12260b56d9ce7b961c8fe33498ce779);
+  text-shadow: 0.125rem 0.125rem 0.062rem rgba(0, 0, 0, 0.4);
+}
+#contact p {
+  margin-bottom: 2rem;
+}
+#contact span {
+  font-size: 2rem;
+}
+#contact span i {
+  padding-right: 0.5rem;
+}
+
+#contact button{
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 8px;
+}
+footer p{
+  padding-top:calc(5vh/2);
+}
