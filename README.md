@@ -4,7 +4,7 @@ Graphic Designing Extravaganza!
 > - This is only a part of the main website
 ## Open preview
 ```
-http://htmlpreview.github.io/?https://github.com//Dineth2006/Visual-Odyssey/index.html
+https://htmlpreview.github.io/?https://github.com/Dineth2006/Visual-Odyssey/blob/main/index.html
 ```
 ## Copyright
 > All the copyrights reversed.
